@@ -16,7 +16,6 @@ export const InfoTag: React.FC<InfoTagProps> = ({
 }) => {
   let className = "";
 
-  // Definimos las clases según la variante
   switch (variant) {
     case "instruction":
       className =
@@ -28,7 +27,7 @@ export const InfoTag: React.FC<InfoTagProps> = ({
       break;
     case "success":
       className =
-        "bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded";
+        "bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg";
       break;
   }
 
