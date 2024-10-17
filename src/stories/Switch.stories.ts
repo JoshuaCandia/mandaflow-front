@@ -18,6 +18,7 @@ export default {
 export const Default = {
   args: {
     onChange: action("changed"),
+    color: "primary",
     label: "Lorem Ipsum",
   },
 };
