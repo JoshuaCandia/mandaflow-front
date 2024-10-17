@@ -1,8 +1,6 @@
-import { Bold, Italic, Underline } from "lucide-react";
-
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
-import React from "react";
 import { Label } from "@radix-ui/react-label";
+import React from "react";
 
 export function ToggleGroupComponent({ label }: { label: string }) {
   return (
@@ -17,7 +15,11 @@ export function ToggleGroupComponent({ label }: { label: string }) {
         <ToggleGroupItem size="lg" value="italic" aria-label="Toggle italic">
           <span className="text-gray-400 text-lg">6</span>
         </ToggleGroupItem>
-        <ToggleGroupItem size="lg" value="italic" aria-label="Toggle italic">
+        <ToggleGroupItem
+          size="lg"
+          value="extra-italic"
+          aria-label="Toggle italic"
+        >
           <span className="text-gray-400 text-lg">9</span>
         </ToggleGroupItem>
         <ToggleGroupItem
