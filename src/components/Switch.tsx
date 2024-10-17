@@ -37,7 +37,7 @@ export const Switch: React.FC<SwitchProps> = ({
         </Label>
         <CustomSwitch
           checked={checked}
-          color={color}
+          color={color === "primary" ? "#FAA275" : color}
           onChange={onChange}
           id="switch"
         />
