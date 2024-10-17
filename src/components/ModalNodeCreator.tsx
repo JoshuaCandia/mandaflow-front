@@ -20,7 +20,7 @@ interface ModalNodeCreatorProps {
   onSubmit: () => void;
 }
 
-const nodeType = ["demo 1", "demo 2", "demo 3", "demo 4"];
+const nodeType = ["Demo 1", "Demo 2", "Demo 3", "Demo 4"];
 
 export function ModalNodeCreator({ onSubmit }: ModalNodeCreatorProps) {
   return (
@@ -36,7 +36,7 @@ export function ModalNodeCreator({ onSubmit }: ModalNodeCreatorProps) {
               <SelectTrigger id="nodeType">
                 <SelectValue placeholder="Seleccionar" />
               </SelectTrigger>
-              <SelectContent position="popper" className="capitalize">
+              <SelectContent position="popper">
                 {nodeType.map((item) => (
                   <SelectItem key={item} value={item}>
                     {item}
